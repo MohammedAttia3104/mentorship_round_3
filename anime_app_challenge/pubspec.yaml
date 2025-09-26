@@ -1,0 +1,97 @@
+name: anime_app_challenge
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  #Easy and Fast internationalizing and localization your Flutter Apps
+  easy_localization: ^3.0.8
+  #Flutter Secure Storage provides API to store data in secure storage
+  flutter_secure_storage: ^9.2.4
+  #Service Locator for Dart and Flutter projects
+  get_it: ^8.2.0
+  #Networking
+  dio: ^5.9.0
+  pretty_dio_logger: ^1.4.0
+  retrofit: ^4.7.2
+  retrofit_generator: ^10.0.5
+  logger: ^2.6.1
+  #API client generator
+  freezed: ^3.2.3
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.9.0
+  #State management
+  bloc: ^9.0.0
+  flutter_bloc: ^9.1.1
+  #Plugin for adapting screen
+  flutter_screenutil: ^5.9.3
+  #SVG rendering
+  flutter_svg: ^2.2.1
+  #Check Responsive UI
+  device_preview: ^1.3.1
+  # Bottom Navigation Bar
+  google_nav_bar: ^5.0.7
+  line_icons: ^2.0.1
+
+
+  cupertino_icons: ^1.0.8
+
+  shared_preferences: any
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  #Code generator (mainly used with cubit & retrofit)
+  json_serializable: ^6.11.1
+  build_runner: ^2.8.0
+
+
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/svgs/
+    - assets/icons/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Raleway
+      fonts:
+        - asset: assets/fonts/Raleway-Bold.ttf
+        - asset: assets/fonts/Raleway-ExtraBold.ttf
+        - asset: assets/fonts/Raleway-Medium.ttf
+        - asset: assets/fonts/Raleway-Regular.ttf
+        - asset: assets/fonts/Raleway-SemiBold.ttf
+        - asset: assets/fonts/Raleway-Light.ttf
+
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
