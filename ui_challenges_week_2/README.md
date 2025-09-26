@@ -60,6 +60,10 @@ flutter run
 ```
 
 ## 🎥 Video Demonstration
+<<<<<<< HEAD
 https://github.com/user-attachments/assets/fee9cdaa-50e8-4821-9399-739a8ca13b73
 
  
+=======
+https://github.com/user-attachments/assets/fee9cdaa-50e8-4821-9399-739a8ca13b73
+>>>>>>> 4fa1c65 (Update ui_challenges_week_2 project with latest changes and add clean architecture mock to anime app challenge)

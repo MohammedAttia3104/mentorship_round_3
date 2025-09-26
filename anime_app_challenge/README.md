@@ -20,4 +20,8 @@ Screen, and Upgrade plan Screen.
 
 
 ## 🎥 Application
+<<<<<<< HEAD
 https://github.com/user-attachments/assets/eda631d4-e73b-4dbf-b918-883266be6b33
+=======
+https://github.com/user-attachments/assets/eda631d4-e73b-4dbf-b918-883266be6b33
+>>>>>>> 4fa1c65 (Update ui_challenges_week_2 project with latest changes and add clean architecture mock to anime app challenge)

@@ -21,10 +21,10 @@ void main() async {
     ),
   );
   runApp(
-    DevicePreview(
-      enabled: !kReleaseMode,
-      builder: (context) =>
+    // DevicePreview(
+    //   enabled: !kReleaseMode,
+    //   builder: (context) =>
           AnimeApp(),
-    ),
+    // ),
   );
 }
