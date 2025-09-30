@@ -42,8 +42,6 @@ dart run bin/ahwa_console_app.dart
 - `repository/`: Contains repository interfaces and their implementations for data access.
 - `data/`: Contains service implementations that interact with data storage.
 - `controller/`: Contains the `ManagerController` which orchestrates the application logic.
-- `bin/`: Contains the main entry point of the application.
-
-## Images 
+- `lib/`: Contains the main entry point of the application.
 
 
