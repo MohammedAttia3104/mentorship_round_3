@@ -1,11 +1,11 @@
 import '../data/report_services.dart';
-import '../models/order.dart';
+import '../models/drink.dart';
 import '../models/report.dart';
 
 abstract class ReportRepository {
   int getTotalOrdersServed();
 
-  Map<DrinkType, int> generateTopSellingDrinksReport();
+  Drink generateTopSellingDrinksReport();
 
   Report generateDailyReport();
 }
@@ -21,7 +21,7 @@ class ReportRepositoryImpl implements ReportRepository {
   }
 
   @override
-  Map<DrinkType, int> generateTopSellingDrinksReport() {
+  Drink generateTopSellingDrinksReport() {
     return _reportServices.generateTopSellingDrinksReport();
   }
 

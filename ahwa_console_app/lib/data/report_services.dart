@@ -1,11 +1,12 @@
 import '../models/order.dart';
 import '../models/report.dart';
+import '../models/drink.dart';
 import 'order_services.dart';
 
 abstract class ReportServices {
   int getTotalOrdersServed();
 
-  Map<DrinkType, int> generateTopSellingDrinksReport();
+  Drink generateTopSellingDrinksReport();
 
   Report generateDailyReport();
 }
@@ -21,7 +22,7 @@ class ReportServicesImpl implements ReportServices {
   }
 
   @override
-  Map<DrinkType, int> generateTopSellingDrinksReport() {
+  Drink generateTopSellingDrinksReport() {
     final completedOrders = _orderServices.getCompletedOrders();
     final Map<DrinkType, int> drinkCount = {};
 
@@ -33,7 +34,11 @@ class ReportServicesImpl implements ReportServices {
       );
     }
 
-    return drinkCount;
+    final topDrinkType = drinkCount.entries.isNotEmpty
+        ? drinkCount.entries.reduce((a, b) => a.value > b.value ? a : b).key
+        : null;
+
+    return topDrinkType != null ? Drink(drinkType: topDrinkType) : Drink(drinkType: DrinkType.none);
   }
 
   @override

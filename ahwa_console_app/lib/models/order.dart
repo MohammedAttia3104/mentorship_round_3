@@ -1,4 +1,4 @@
-enum DrinkType { shai, turkishCoffee, hibiscusTea }
+enum DrinkType { shai, turkishCoffee, hibiscusTea, none }
 
 enum SpecialInstruction { extraMint, noSugar, yarais, other }
 

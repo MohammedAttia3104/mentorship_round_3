@@ -1,16 +1,10 @@
 import '../models/order.dart';
-import '../models/report.dart';
 import '../repository/order_repository.dart';
-import '../repository/report_repository.dart';
 
-class ManagerController {
+class OrdersController {
   final OrderRepository orderRepository;
-  final ReportRepository reportRepository;
 
-  ManagerController({
-    required this.orderRepository,
-    required this.reportRepository,
-  });
+  OrdersController({required this.orderRepository});
 
   void addOrder(
     int orderId,
@@ -33,17 +27,5 @@ class ManagerController {
 
   List<Order> viewPendingOrders() {
     return orderRepository.getPendingOrders();
-  }
-
-  Map<DrinkType, int> generateTopSellingDrinksReport() {
-    return reportRepository.generateTopSellingDrinksReport();
-  }
-
-  int getTotalOrdersServed() {
-    return orderRepository.getCompletedOrders().length;
-  }
-
-  Report generateDailySalesReport() {
-    return reportRepository.generateDailyReport();
   }
 }

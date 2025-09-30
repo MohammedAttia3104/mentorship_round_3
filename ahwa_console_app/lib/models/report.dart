@@ -1,7 +1,7 @@
-import '../models/order.dart';
+import '../models/drink.dart';
 
 class Report {
-  final Map<DrinkType, int> topSellingDrinks;
+  final Drink topSellingDrinks;
   final int totalOrdersServed;
 
   Report({
